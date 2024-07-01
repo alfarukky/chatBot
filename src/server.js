@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 9000;
 const app = express();
 dotenv.config();
 //set static folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 const server = http.createServer(app);
 const io = socketio(server);
